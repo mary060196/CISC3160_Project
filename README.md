@@ -71,7 +71,7 @@
     ```
     x
     ```
-    test for $17$ different syntactic errors and $1$ semantic error (uninitialized variables). 
+    test for 17 different syntactic errors and 1 semantic error (uninitialized variables). 
   - The file `test.txt` :
   
     ```
