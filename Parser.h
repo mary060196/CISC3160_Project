@@ -81,6 +81,7 @@ class Parser
                  {
                       if (OpenParens > 0)
                             printSyntaxError (10);
+		      myTokenizer.next(t1); // Retrieve the next token.
                  }
                  else
                       skipAfterNextSemicolon ();
@@ -346,7 +347,6 @@ class Parser
         bool matchSemicolon (void)
         {
             sAnalyzer.process(t1, 4); // Call the Semantic Analyzer to process this.
-            myTokenizer.next(t1); // Retrieve the next token.
             return true;
         }
 		
